@@ -1,0 +1,181 @@
+.wrapper{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+/*NAVIGATION BAR*/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    padding: 0px 10px 0px 10px;
+    border-bottom: 10px solid #019160;
+}
+
+.navbar-item{
+    display: flex;
+    justify-content: space-around;
+    line-height: 40px;
+    width: 400px;
+    font-size: 20px;
+}
+
+#nav-navigation{
+    font-size: larger;
+}
+
+#nav-logo{
+    cursor: pointer;
+}
+
+.navbar-item .item{
+    width: 100px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.navbar-item .item:hover{
+    background-color: #bbb;
+}
+
+#nav-user-access{
+    justify-content: right;
+}
+
+
+/*CONTENT OF PAGE*/
+.content{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 100px);
+    height: calc(100% - 50px);
+    padding: 10px 50px 30px 10px;
+}
+
+.content-item-container{
+    display: flex;
+    position: absolute;
+    top: 50px;
+    left: 260px;
+    flex-wrap: wrap;
+    width: 1000px;
+    height: 600px;
+    overflow: auto;
+}
+
+.content-item{
+    width: 24%;
+    height: 150px;
+    border: 1px solid #000;
+    background-color: red;
+    margin: 2px;
+}
+
+.content-item-name{
+    width: 100%;
+    height: 13%;
+    background-color: #019160;
+}
+
+.content-item-img{
+    width: 100%;
+    height: 60%;
+    background-color: aqua;
+}
+
+.content-item-price{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 10%;
+}
+
+.content-item-action{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.action-buy{
+    background-color: violet;
+    line-height: 30px;
+    text-align: center;
+    width: 100%;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.action-buy:hover{
+    background-color: rgb(209, 139, 209);
+}
+
+/* Login Popup */
+#login-popup{
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    height: 80px;
+    border-radius: 5px;
+    background-color: yellow;
+}
+
+#login-escape{
+    position: absolute;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    background-color: red;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+#login-escape:hover{
+    background-color: rgb(148, 12, 12);
+}
+
+form label{
+    width: 150px;
+    font-weight: bold;
+}
+
+#user-email{
+    margin-bottom: 10px;
+}
+
+/* Register Popup */
+#register-popup{
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 400px;
+    height: 180px;
+    background-color: yellow;
+}
+
+#register-escape{
+    position: absolute;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    background-color: red;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+#register-escape:hover{
+    background-color: rgb(148, 12, 12);
+}
+

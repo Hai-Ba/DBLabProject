@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTGH-Store</title>
+    <link rel="stylesheet" href="../../style/common/common.css">
+    <link rel="stylesheet" href="../../style/layout/homepage.css">
+    <script src="../../script/jquery3_6_0.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="navbar">
+            <div class="navbar-item" id="nav-logo">
+                <b style="font-size: 30px;color:blueviolet;">HTGH-Store</b>
+            </div>
+            <div class="navbar-item" id="nav-navigation">
+                <!-- Navigation here! -->
+                <a href="product.html" class="item" id="nav-product">Products</a>
+                <a href="aboutus.html" class="item" id="nav-aboutus">About Us</a>
+                <a href="contact.html" class="item" id="nav-contact">Contact</a>
+                <a href="address.html" class="item" id="nav-address">Address</a>
+            </div>
+            <div class="navbar-item" id="nav-user-access">
+                <div class="button" id="login-button">Login</div>
+                <div class="button" id="register-button">Register</div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content-item-container">
+                <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint officiis nam, amet debitis quod labore incidunt iste praesentium, ducimus cumque id, maxime eius dignissimos nihil ullam aspernatur ab in voluptas.</div>
+            </div>
+        </div>
+    </div>
+    <!-- Login POPUP -->
+    <div id="login-popup">
+        <div id="login-escape">x</div>
+        <form>
+            <div class="input" id="user-email">
+                <label for="username">Username</label>
+                <input type="text" id="user-email-input" placeholder="username">
+                <span></span>
+            </div>
+            <div class="input" id="user-password">
+                <label for="password">Password</label> 
+                <input type="password" id="user-password-input" placeholder="password">
+                <span></span>
+            </div>
+            <button id="log-in">Login</button>
+        </form>
+    </div>
+
+    <!-- Register POPUP -->
+    <div id="register-popup">
+        <div id="register-escape">x</div>
+        <div class="input">Họ và tên: <input type="text" id="register-name" placeholder="Nguyễn Văn A"></div>
+        <div class="input">Ngày sinh: <input type="text" id="register-dob" placeholder="Year-Month-Date"></div>
+        <div class="input">Tên đăng nhập: <input type="text"  id="register-email" placeholder="User"></div>
+        <div class="input">Mật khẩu: <input type="text"  id="register-password" placeholder="Pass"></div>
+        <div class="button" id="register">Register</div>
+    </div>
+
+    <script src="../../script/common/common.js"></script>
+    <script src="../../script/layout/navpage.js"></script>
+    <script src="../../script/layout/login.js"></script>
+    <script src="../../script/layout/register.js"></script>
+</body>
+</html>

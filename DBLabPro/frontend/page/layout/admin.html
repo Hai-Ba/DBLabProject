@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTGH-Store Admin</title>
+    <link rel="stylesheet" href="../../style/common/common.css">
+    <link rel="stylesheet" href="../../style/layout/adminpage.css">
+    <script src="../../script/jquery3_6_0.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="navbar">
+            <div class="navbar-item" id="nav-logo">
+                <b style="font-size: 30px;color:blueviolet;">HTGH-Admin</b>
+            </div>
+            <div class="navbar-item" id="nav-add-product">
+                <div>Add Product</div>
+            </div>
+            <div class="navbar-item" id="nav-user-access">
+                <a class="button" href="homepage.html">Log out</a>
+            </div>
+        </div>
+        <div class="content">
+            <div id="grid-container" class="content-item-container">
+                <!-- <div class="content-item">
+                    <div class="content-item-name">Product Name</div>
+                    <img class="content-item-img" src="../../assets/img/cukcuk-logo.png" alt="">
+                    <div class="content-item-price">10000</div>
+                    <div class="content-item-action">
+                        <div class="action-add">Add quantity</div>
+                        <div class="action-delete">Delete</div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <div id="add-product-form">
+        <div id="login-escape">x</div>
+        <div class="input" >Tên sản phẩm: <input type="text" id="product-name" required></div>
+        <div class="input" >Giá cả: <input type="number" id="product-price" required></div>
+        <div class="input" >Số lượng: <input type="number" id="product-quantity" required></div>
+        <div class="input" >Hình ảnh: <input type="text" id="product-image" required></div>
+        <div class="button" id="add-new-product">Add new</div>
+    </div>
+
+    <div id="add-quantity-form">
+        <div id="add-escape">x</div>
+        <div class="input" >Số lượng: <input type="number" id="product-quantity-add" required></div>
+        <div class="button" id="add-new-quantity">Sửa</div>
+    </div>
+
+    <!-- JS cho Trang AdminPage -->
+    <script src="../../script/common/common.js"></script>
+    <script src="../../script/common/data.js"></script>
+    <script src="../../script/layout/adminpage.js"></script>
+</body>
+</html>

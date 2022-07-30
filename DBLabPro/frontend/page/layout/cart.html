@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTGH-StoreUser</title>
+    <link rel="stylesheet" href="../../style/common/common.css">
+    <link rel="stylesheet" href="../../style/layout/cart.css">
+    <script src="../../script/jquery3_6_0.js"></script>
+    <script src="https://www.paypal.com/sdk/js?client-id=AYOpUxRVTTp24qgV-w3vddTWH23uaJQOQ560JZIcXUrr47yKfeHqVa5I6nvvVc2BDGiskyvBnJ4TeRpO&currency=USD"></script>
+    <!-- <script src="../../script/layout/paypal.js" ></script> -->
+</head>
+<body>
+    <div class="wrapper">
+        <div class="navbar">
+            <div class="navbar-item" id="nav-logo">
+                <b style="font-size: 30px;color:blueviolet;">HTGH-Store</b>
+            </div>
+            <div class="navbar-item" id="nav-navigation">
+                <!-- Navigation here! -->
+                <a href="product.html" class="item" id="nav-product">Products</a>
+                <a href="aboutus.html" class="item" id="nav-aboutus">About Us</a>
+                <a href="contact.html" class="item" id="nav-contact">Contact</a>
+                <a href="address.html" class="item" id="nav-address">Address</a>
+            </div>
+            <div class="navbar-item" id="nav-user-access">
+                <!-- <div class="button" id="cart-button">Cart</div>
+                <div class="button" id="user-button">User_Name</div>
+                <a class="button" id="logout-button" href="homepage.html">Log out</a> -->
+            </div>
+        </div>
+        <div class="content">
+            <div class="content-container">
+                <div class="cart-order" id="order-grid">
+                    <!-- <div class="orders">
+                        <div class="product-name">But chi</div>
+                        <div class="product-price">12000</div>
+                        <div class="order-quantity">
+                            <div class="quantity-adjust down">-</div>
+                            <div class="number-order">1</div>
+                            <div class="quantity-adjust up">+</div>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="cart-price" id="total-price">0 VND</div>
+                <div id="paypal"></div>
+            </div>
+        </div>
+    </div>
+    <!-- JS cho User -->
+    <script src="../../script/common/common.js"></script>
+    <script src="../../script/layout/cart.js"></script>
+</body>
+</html>
